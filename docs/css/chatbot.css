@@ -13,10 +13,10 @@
     transition: background-color 0.3 ease;
     align-items: center;
     justify-content: center;
-
 }
 
 .btnOpenChat:hover{
     cursor: pointer;
     background-color: #38adbd; 
 }
+
