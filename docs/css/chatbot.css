@@ -20,3 +20,106 @@
     background-color: #38adbd; 
 }
 
+.ChatPopup{
+    /* display: none; */
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #ddd;
+
+    width: 400px;
+    height: 500px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.CWHeader{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #495057;
+    
+}
+
+.CWText{
+    color: #38adbd;
+    font-weight: bold;
+    text-decoration: solid;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnCloseChat{
+    background: red;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #38adbd;
+    cursor: pointer;
+}
+
+.txtMessage{
+    padding: 10px;
+    overflow-y: auto;
+    height: 80%;
+
+    background: linear-gradient(to right, #38adbd, #00050a);
+    border-bottom: 2px solid #ddd;
+}
+
+
+
+.userChat {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+
+.botChat {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+
+.CWFooter{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    
+}
+
+.CWInput{
+    border: none;
+    outline: none;
+
+    width: 320px;
+
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnSendMessage{
+    background: #38adbd;
+    color: white;
+
+    padding-right: 7px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+    border-radius: 8px;
+    border: 1px solid #38adbd;
+    
+    cursor: pointer;
+}

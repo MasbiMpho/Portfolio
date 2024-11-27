@@ -293,25 +293,32 @@
             <!-- ChatBot  -->
             <div>
                 <!-- Chatbot open button -->
-                <button id="openchat" class="btnOpenChat">
+                <button id="openchat" class="btnOpenChat" >
                     <i class="fas fa-comments"></i>
                 </button>
 
                 <!-- Chatbot window -->
-                 <div id="chatWindow">
-                    <div id="chatWindowHeader">
-                        <span>ChatBot</span>
-                        <button id="closechat" >X</button>
+                 <div id="chatWindow" class="ChatPopup">
+                    <div id="chatWindowHeader" class="CWHeader">
+                        <span class="CWText">ChatBot</span>
+                        <button id="closechat" class="btnCloseChat">X</button>
                     </div>
 
-                    <div id="chatWindowContent">
+                    <div id="chatWindowContent" class="txtMessage">
                         <!-- Messages are displayed here -->
                     </div>
 
-                    <div id="chatWindowFooter">
-                        <input type="text" id="textbox" placeholder="Type message here...">
-                        <button id="sendmessage">Send</button>
-                    </div>
+
+                    <form action="/submit" method="post" class="CWFooter">
+                        <input type="text" name="userInput" class="CWInput"  placeholder="Type and press Enter">
+                        <button type="submit" class="btnSendMessage">Submit</button>
+                    </form>
+
+
+                    <!-- <div id="chatWindowFooter" class="CWFooter">
+                        <input type="text" id="textbox" class="CWInput"  placeholder="Type message here...">
+                        <button id="sendmessage" class="btnSendMessage">Send</button>
+                    </div> -->
 
                  </div>
 
