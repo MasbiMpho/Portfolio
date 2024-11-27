@@ -293,7 +293,7 @@
             <!-- ChatBot  -->
             <div>
                 <!-- Chatbot open button -->
-                <button id="openchat" class="btnOpenChat" >
+                <button id="openchat" class="btnOpenChat" onclick="OpenChatFunc()">
                     <i class="fas fa-comments"></i>
                 </button>
 
@@ -301,7 +301,7 @@
                  <div id="chatWindow" class="ChatPopup">
                     <div id="chatWindowHeader" class="CWHeader">
                         <span class="CWText">ChatBot</span>
-                        <button id="closechat" class="btnCloseChat">X</button>
+                        <button id="closechat" class="btnCloseChat" onclick="CloseChatFunc()">X</button>
                     </div>
 
                     <div id="chatWindowContent" class="txtMessage">
