@@ -64,7 +64,7 @@
     cursor: pointer;
 }
 
-.txtMessage{
+.txtArea{
     padding: 10px;
     overflow-y: auto;
     height: 80%;
@@ -73,7 +73,21 @@
     border-bottom: 2px solid #ddd;
 }
 
+/* Chat message styles */
+.txtMessages {
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
 
+/* User message styles */
+.userMessage {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
 
 .userChat {
     background-color: #007bff;
