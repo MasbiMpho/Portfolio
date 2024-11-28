@@ -309,8 +309,8 @@
                     </div>
 
 
-                    <form action="/submit" method="post" class="CWFooter">
-                        <input type="text" name="userInput" class="CWInput"  placeholder="Type and press Enter">
+                    <form action="/submit" method="post" class="CWFooter" autocomplete="off" onsubmit="return validateForm()">
+                        <input type="text" name="userTextbox" id="userinput" class="CWInput" required placeholder="Type and press Enter" >
                         <button type="submit" class="btnSendMessage">Submit</button>
                     </form>
 
