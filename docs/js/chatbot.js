@@ -40,9 +40,9 @@ function botResponseFunc(userinput){
     const lowercase = userinput.toLowerCase();
 
     if(lowercase.includes('hello') || lowercase.includes('hi')) {
-        return "Hello, How can i assist you today?";
+        return "Hello, How can I assist you today?";
     }else{
-        return "Sorry, I didn't understand that. Couldyou please rephrase?";
+        return "Sorry, I didn't understand that. Could you please rephrase?";
     }
 }
 
@@ -50,9 +50,7 @@ function sendMessageFunc(){
     const input = document.getElementById('userinput').value.trim();
 
     if(input === ''){
-
-        alert("It looks like you sent an empty message! Try typing something.");
-        return;
+       return displayMessageFunc("It looks like you sent an empty message! Try typing something.", 'botChat');
     }
 
     displayMessageFunc(input, 'userMessage');
@@ -73,4 +71,3 @@ document.getElementById('userinput').addEventListener('keypress', function(event
       sendMessageFunc();
     }
   });
-
