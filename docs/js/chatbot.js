@@ -48,19 +48,22 @@ function botResponseFunc(userinput){
             return "Fine";
         break;
         case lowercase.includes('your name'):
-            return "Bot. Chat Bot";
+            return "ChatBot. De-O ChatBot.";
         break;
         case lowercase.includes('bye'):
             return "Good bye";
+        break;
+        case lowercase.includes('help'):
+            return "Of course! Tell me what you need assistance with, and I’ll do my best to help.";
         break;
         case lowercase.includes('thanks') || lowercase.includes('thank you'):
             return "You're welcome! Anything else I can help with?";
         break;
         case lowercase.includes('skills') || lowercase.includes('skill'):
-            return "I see you’re interested in Mpho's skills. Here’s what I found!";
+            return "I see you’re interested in Mpho's skills. Here’s what I found! \n kuerngern";
         break;
         case lowercase.includes('about'):
-            return "I was created by Mpho Masibigiri to assist with various tasks, but I’m here to help you create a portfolio or showcase your work!";
+            return "I was created by Mpho Masibigiri to assist with various tasks, such as showcasing his skills, education and provide contact information at your request.";
         break;
         case lowercase.includes('education'):
             return "Hello, How can I assist you today?";

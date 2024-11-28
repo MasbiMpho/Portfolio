@@ -82,6 +82,7 @@
 .txtMessages {
     padding: 8px 10px;
     margin: 5px 0;
+    margin-top: 10px;
     border-radius: 10px;
     max-width: 80%;
     word-wrap: break-word;
@@ -91,15 +92,15 @@
 .userChat {
     background-color: #007bff;
     color: white;
-    align-self: flex-end;
- 
+    /* display: inline-block; */
+    margin-left: auto;
 }
 
 
 .botChat {
     background-color: #f1f1f1;
     color: black;
-    align-self: flex-start;
+    margin-right: auto;
 }
 
 
@@ -129,7 +130,7 @@
 
     padding-right: 7px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     
@@ -150,7 +151,7 @@
          
         flex-direction: column;
         z-index: 1000;
-}
+
     }
 
     .txtArea {
@@ -169,13 +170,13 @@
         border: none;
         outline: none;
     
-        width: 320px;
+        width: 300px;
     
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
     }
 
     .btnSendMessage{
-        padding: 8px; /* Adjust button size */
+        padding: 8px; 
     }
 }
