@@ -38,12 +38,51 @@ function displayMessageFunc(message, sender){
 
 function botResponseFunc(userinput){
     const lowercase = userinput.toLowerCase();
+ 
+    switch(true){
+        case lowercase.includes('hello') || lowercase.includes('hi'):
+            return "Hello, How can I assist you today?";
+        break;
 
-    if(lowercase.includes('hello') || lowercase.includes('hi')) {
-        return "Hello, How can I assist you today?";
-    }else{
-        return "Sorry, I didn't understand that. Could you please rephrase?";
+        case lowercase.includes('how are you'):
+            return "Fine";
+        break;
+        case lowercase.includes('your name'):
+            return "Bot. Chat Bot";
+        break;
+        case lowercase.includes('bye'):
+            return "Good bye";
+        break;
+        case lowercase.includes('thanks') || lowercase.includes('thank you'):
+            return "You're welcome! Anything else I can help with?";
+        break;
+        case lowercase.includes('skills') || lowercase.includes('skill'):
+            return "I see you’re interested in Mpho's skills. Here’s what I found!";
+        break;
+        case lowercase.includes('about'):
+            return "I was created by Mpho Masibigiri to assist with various tasks, but I’m here to help you create a portfolio or showcase your work!";
+        break;
+        case lowercase.includes('education'):
+            return "Hello, How can I assist you today?";
+        break;
+        case lowercase.includes('interests') || lowercase.includes('interest'):
+            return "Hello, How can I assist you today?";
+        break;
+        case lowercase.includes('awards') || lowercase.includes('award'):
+            return "Hello, How can I assist you today?";
+        break;
+        default:
+            return "I’m not sure I understand. Can you explain your request a bit more?";
+        break;
+
     }
+    
+
+    // if(lowercase.includes('hello') || lowercase.includes('hi')) {
+    //     return "Hello, How can I assist you today?";
+    // }else{
+    //     return "Sorry, I didn't understand that. Could you please rephrase?";
+    // }
 }
 
 function sendMessageFunc(){
@@ -53,7 +92,7 @@ function sendMessageFunc(){
        return displayMessageFunc("It looks like you sent an empty message! Try typing something.", 'botChat');
     }
 
-    displayMessageFunc(input, 'userMessage');
+    displayMessageFunc(input, 'userChat');
 
     document.getElementById('userinput').value = '';
 
@@ -66,8 +105,7 @@ function sendMessageFunc(){
 document.getElementById('userinput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
       event.preventDefault();
-      
-    //   alert('You pressed Enter: ' + this.value);
+
       sendMessageFunc();
     }
   });

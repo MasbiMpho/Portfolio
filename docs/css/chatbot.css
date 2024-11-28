@@ -28,8 +28,10 @@
     right: 10px;
     border: 1px solid #ddd;
 
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 500px;
+
 
     background-color: white;
     border-radius: 10px;
@@ -65,15 +67,18 @@
 }
 
 .txtArea{
-    padding: 10px;
+    flex-grow: 1;
+    max-height: 400px;
+   
     overflow-y: auto;
+    padding: 10px;
     height: 80%;
 
     background: linear-gradient(to right, #38adbd, #00050a);
     border-bottom: 2px solid #ddd;
 }
 
-/* Chat message styles */
+
 .txtMessages {
     padding: 8px 10px;
     margin: 5px 0;
@@ -82,23 +87,19 @@
     word-wrap: break-word;
 }
 
-/* User message styles */
-.userMessage {
-    background-color: #007bff;
-    color: white;
-    align-self: flex-end;
-}
 
 .userChat {
     background-color: #007bff;
     color: white;
     align-self: flex-end;
+ 
 }
 
 
 .botChat {
     background-color: #f1f1f1;
     color: black;
+    align-self: flex-start;
 }
 
 
@@ -136,4 +137,45 @@
     border: 1px solid #38adbd;
     
     cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .ChatPopup {
+
+        bottom: 5px;
+        right: 10px;
+       
+        width: 95%;
+         
+        flex-direction: column;
+        z-index: 1000;
+}
+    }
+
+    .txtArea {
+        max-height: 500px; 
+    }
+
+
+
+    .txtMessages {
+        width: calc(100% - 10px); 
+        word-wrap: break-word;
+
+        
+    }
+    .CWInput{
+        border: none;
+        outline: none;
+    
+        width: 320px;
+    
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .btnSendMessage{
+        padding: 8px; /* Adjust button size */
+    }
 }
