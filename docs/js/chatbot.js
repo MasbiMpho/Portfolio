@@ -41,8 +41,6 @@ function botResponseFunc(userinput){
 
     if(lowercase.includes('hello') || lowercase.includes('hi')) {
         return "Hello, How can i assist you today?";
-    }if(lowercase.includes('')) {
-        return "Please type a message";
     }else{
         return "Sorry, I didn't understand that. Couldyou please rephrase?";
     }
@@ -53,7 +51,7 @@ function sendMessageFunc(){
 
     if(input === ''){
 
-        alert("All fields must be filled out.");
+        alert("It looks like you sent an empty message! Try typing something.");
         return;
     }
 
