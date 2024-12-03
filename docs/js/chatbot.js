@@ -4,6 +4,7 @@
 function OpenChatFunc(){
     document.getElementById('chatWindow').style.display = 'flex';
     document.getElementById('userinput').focus();
+    displayMessageFunc("Hello, I'm De-O. How can I assist you today?", 'botChat');
 }
 
 //Close Chatbot Function
@@ -13,17 +14,6 @@ function CloseChatFunc(){
     userinput.value = '';
 }
 
-// //Empty Message Validation
-// function validateFormFunc(){
-//     const input = document.getElementById('userinput').value;
-
-//     if(input == "")
-//     {
-//         alert("All fields must be filled out.");
-//         return false;
-//     }
-//     return true;
-// }
 
 function displayMessageFunc(message, sender){
     const chatwc = document.getElementById('chatWindowContent');
