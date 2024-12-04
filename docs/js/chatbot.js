@@ -54,6 +54,18 @@ function displayMessageFunc(message, sender){
 function botResponseFunc(userinput){
     const lowercase = userinput.toLowerCase();
 
+    const helpkey = [
+        "About Mpho / Mpho",
+        "Skills",
+        "Education",
+        "Accomplishments",
+        "About You",
+        "Help",
+        "Interest"
+      ];
+
+      const bullethelp = helpkey.map(item => `• ${item}`).join("\n");
+
     const softskills = [
         "Achievement Oriented",
         "Adaptable and Agile"
@@ -87,30 +99,34 @@ function botResponseFunc(userinput){
             return "Good bye";
         break;
         case lowercase.includes('help'):
-            return "Of course! Tell me what you need assistance with, and I’ll do my best to help.";
+            return "Of course! \nHere is a list of keywords you can include to help you get started.\n" + bullethelp;
         break;
         case lowercase.includes('thanks') || lowercase.includes('thank you'):
             return "You're welcome! Anything else I can help with?";
         break;
         case lowercase.includes('skills') || lowercase.includes('skill'):
             navigateToSection('skills');
-            return "I see you’re interested in Mpho's skills. Here’s what I found: \n\n" + "List of Soft Skills \n"+ bulletsoftskills + "\n\n"+ "List of Technical Skills \n" + bullettechskills + "\n\n To explore Mpho's complete skill set, please refer to the Skills section, which I've conveniently navigated to for you.";
+            return "Mpho possess a strong set of soft skills, including being achievement-oriented, adaptable, and agile. He thrives in collaborative environments and he is an effective problem-solver, with a focus on time management to consistently meet deadlines and deliver results. Technical expertise spans several programming languages, including C#, C++, HTML/CSS, Java, JavaScript, and Visual Basic. He is also proficient with a variety of tools and technologies, such as Android Studio, Code Blocks, Discord, Eclipse, Git, Lucidchart, MS Office, SQL Server Management Studio, and Visual Studio Code.";
         break;
-        case lowercase.includes('about'):
+        case lowercase.includes('about mpho') || lowercase.includes('mpho'):
             navigateToSection('about');
-            return "I was created by Mpho Masibigiri to assist with various tasks, such as showcasing his skills, education and provide contact information at your request. I can also navigate the webpage toi help make things easier :)";
+            return "Mpho Masibigiri is a Computer Science graduate with a strong passion for developing user-centric applications. He has a solid foundation in programming languages such as Java, HTML/CSS, and C#/C++, and is committed to staying up-to-date with modern technologies to continually improve the user experience. He is analytical, achievement-oriented, and detail-focused, with a proven ability to manage time effectively, meet deadlines, and deliver high-quality results. He also thrives in collaborative team environments, especially in support roles where he can contribute to problem-solving, offer technical assistance, and work alongside others to create innovative solutions.";
+        break;
+        case lowercase.includes('about you'):
+          
+            return "I am a Chatbot created by Mpho Masibigiri to assist with various tasks, such as showcasing his skills, education and provide contact information at your request. I can also redirect you to different sections on the webpage :)";
         break;
         case lowercase.includes('education'):
             navigateToSection('education');
-            return "I have redirected you to the Education Section. Enjoy and call if you need any more assisstance.";
+            return "Mpho Masibigiri holds a Bachelor of Science in Computer Science and Informatics from the University of Johannesburg. Studies included courses in Agile Programming, Android Application Development using C#, Database Development and Management, Data Structures and Algorithms, Java Application Development, and Object-Oriented Programming. Mpho also gained experience with the Software Development Life Cycle (Waterfall), Project Management and Deliverables, and Web Development using ASP.NET with C#. Prior to that, he completed his Matric at Divine Kingdom Academy.";
         break;
         case lowercase.includes('interests') || lowercase.includes('interest'):
             navigateToSection('interests');
-            return "I have redirected you to the Interest Section. Enjoy and call if you need any more assisstance.";
+            return "Mpho Masibigiri has a strong passion for video games, both as a player and an enthusiast of game design and technology, which has enhanced his creativity, problem-solving, and understanding of interactive media. He stays updated on industry trends and enjoys exploring new game mechanics, applying innovative solutions to challenges. Coupled with his love for tech gadgets this keeps him engaged with evolving technologies, enabling him to bring fresh, tech-savvy ideas to his work. Additionally, he's fascinated by the integration of technology in cars, particularly in areas like infotainment, GPS, and vehicle diagnostics.\n I’m excited about how IT is transforming the automotive industry. - Mpho";
         break;
-        case lowercase.includes('awards') || lowercase.includes('award'):
+        case lowercase.includes('awards') || lowercase.includes('award') || lowercase.includes('accomplishments') || lowercase.includes('accomplishment'):
             navigateToSection('awards');    
-            return "I have redirected you to the Award Section. Enjoy and call if you need any more assisstance.";
+            return "Mpho Masibigiri has been recognized for several achievements, including Best Supporting Actor at the 1st Years Concert in 2016, and he earned a Bachelor's Degree in Computer Science. He also competed in the Male 400M Sprint at the All African Student Convention, showcasing his athleticism. Additionally, he contributed to a Community Project on Family, gaining valuable experience in social initiatives. His academic accomplishments also includes studies on Plate Waste and a Time Flow, both of which enhanced his analytical and research skills.";
             
         break;
         default:
