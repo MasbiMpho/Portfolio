@@ -301,8 +301,10 @@
                 <!-- Chatbot window -->
                  <div id="chatWindow" class="ChatPopup">
                     <div id="chatWindowHeader" class="CWHeader">
-                        <span class="CWText"><i class="fas fa-robot" style="padding-bottom: 2px;"></i> De-O</span>
-                        <button id="closechat" class="btnCloseChat" onclick="CloseChatFunc()">X</button>
+                        <span class="CWText"><img src="assets/img/robot.png" class="CWImg"> <p class="CWCBName">De-O</p></span>
+                        <button id="helpchat" class="btnHelpChat" onclick="HelpChatFunc()"><i class="fa-solid fa-question"></i></button>
+                        <button id="minichat" class="btnMiniChat" onclick="MiniChatFunc()"><i class="fa-solid fa-minus"></i></button>
+                        <button id="closechat" class="btnCloseChat" onclick="CloseChatFunc()"><i class="fa-solid fa-x"></i></button>
                     </div>
 
                     <div id="chatWindowContent" class="txtArea">
