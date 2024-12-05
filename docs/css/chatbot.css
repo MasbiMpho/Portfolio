@@ -1,0 +1,295 @@
+.btnOpenChat{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    font-size: 25px;
+    background-color: #495057;
+    color: white;
+    transition: background-color 0.3 ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnOpenChat:hover{
+    cursor: pointer;
+    background-color: #38adbd; 
+}
+
+.ChatPopup{
+    
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #ddd;
+
+    max-width: 450px;
+    max-height: 600px;
+    width: 100%;
+    height: 90%;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.CWHeader{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(to right, #f4f8f8, #666e75);
+    
+}
+
+.CWImg{
+    width: 30px; 
+    height: 30px;
+}
+
+.CWCBName{
+    position: absolute; 
+    top:1.6%; 
+    left:9%;
+}
+
+.CWText{
+    
+    color: #000000;
+    font-weight: bold;
+    text-decoration: solid;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnHelpChat{
+    /* margin-left: 80px; */
+    position: absolute;
+    right: 70px;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btnMiniChat{
+    /* margin-left: 280px; */
+    position: absolute;
+    right: 40px;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btnCloseChat{
+    /* margin-right: 10px; */
+    position: absolute;
+    right: 10px;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.btnMiniChat:hover, .btnHelpChat:hover{
+    background: rgb(16, 184, 235);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: 2px solid #020303;
+    border-radius: 10px;
+   
+}
+.btnCloseChat:hover{
+    background: red;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+   
+}
+
+.txtArea{
+
+    padding: 15px;
+    max-height: 90%;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    background: linear-gradient(to right, #38adbd, #00050a);
+    border-bottom: 2px solid #ddd;
+}
+
+
+.txtMessages {
+ 
+    margin: 5px 0;
+    margin-top: 1px;
+    display: inline-block;
+    max-width: 90%;
+    padding: 8px 8px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+
+    white-space: pre-wrap;
+    opacity: 0;                
+    transform: translateY(20px); 
+    animation: fadeSlideIn 1s forwards;
+}
+
+
+.userChat {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+   
+}
+
+
+
+
+.botChat {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+   
+}
+
+
+
+.CWFooter{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    
+}
+
+.CWInput{
+    border: none;
+    outline: none;
+    
+    width: 360px;
+
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnSendMessage{
+    background: #38adbd;
+    color: white;
+
+    padding-right: 7px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+    border-radius: 8px;
+    border: 1px solid #38adbd;
+    
+    cursor: pointer;
+}
+
+.btnSendMessage:hover{
+    background-color: green;
+    opacity: 70%;
+}
+
+
+@media (max-width: 600px) {
+    .ChatPopup {
+
+        bottom: 5px;
+        right: 10px;
+       
+        width: 95%;
+         
+        flex-direction: column;
+        z-index: 1000;
+
+    }
+
+    .txtArea {
+        
+        padding: 15px;
+        max-height: 90%;
+        overflow-y: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column 
+    }
+
+
+
+    .txtMessages {
+        /* width: calc(100% - 10px);  */
+        /* word-wrap: break-word; */
+        display: inline-block;
+        max-width: 75%;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+
+        
+    }
+    .CWInput{
+        border: none;
+        outline: none;
+    
+        width: 300px;
+    
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .btnSendMessage{
+        padding: 8px; 
+    }
+  
+}
+
+
+@keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .txtMessages:nth-child(2) {
+    animation-delay: 1s; 
+  }
+
+  .txtArea::-webkit-scrollbar {
+    width: 0;  /* Hide the scrollbar */
+    height: 0; /* Hide the horizontal scrollbar */
+  }
+  
+  .txtArea::-webkit-scrollbar-thumb {
+    background: transparent;  /* Optional: hide the thumb */
+  }

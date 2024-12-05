@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Chatbot CSS -->
+        <link rel="stylesheet" href="css/chatbot.css"/>
     </head>
     
     <body id="page-top">
@@ -68,10 +70,10 @@
                         <a class="social-icon" href="https://www.github.com/Mpho-CapaCiTi"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-            </section>
-            
-        <!--   <hr class="m-0" />
-             Experience *Comment this out if you decide to add it back
+            </section>    
+          <hr class="m-0" />
+
+           <!--   Experience *Comment this out if you decide to add it back
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
@@ -85,9 +87,9 @@
                     </div>
                    
                 </div>
-            </section> -->
-    
-            <hr class="m-0" />
+            </section> 
+            <hr class="m-0" /> -->
+
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
@@ -133,8 +135,8 @@
                     </div>
                 </div>
             </section>
-            
             <hr class="m-0" />
+
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
@@ -237,8 +239,8 @@
                     </ul>
                 </div>
             </section>
-            
             <hr class="m-0" />
+
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
@@ -249,8 +251,8 @@
                     <p class="mb-0"><i class="fas fa-car left"> </i>   Cars - I have a strong interest in cars, particularly in the integration of technology within the automotive industry. I enjoy learning about how modern vehicles incorporate advanced IT systems, such as infotainment, GPS navigation, and vehicle diagnostics. My passion extends to understanding how software and hardware work together to improve car performance, safety features, and the overall driving experience. I actively follow developments in areas like electric vehicles, autonomous driving, and telematics, and I’m excited about how innovations in IT are shaping the future of transportation. This interest has enhanced my problem-solving abilities and sparked a curiosity to explore the intersection of automotive engineering and information technology.</p>
                 </div>
             </section>
-            
             <hr class="m-0" />
+
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
@@ -288,10 +290,45 @@
                 </div>
             </section>
             
+            <!-- ChatBot  -->
+            <div>
+                <!-- Chatbot open button -->
+                <button id="openchat" class="btnOpenChat" onclick="OpenChatFunc()">
+                    <i class="fas fa-comments"></i>
+                </button>
+            
+
+                <!-- Chatbot window -->
+                 <div id="chatWindow" class="ChatPopup">
+                    <div id="chatWindowHeader" class="CWHeader">
+                        <span class="CWText"><img src="assets/img/robot.png" class="CWImg"> <p class="CWCBName">De-O</p></span>
+                        <button id="helpchat" class="btnHelpChat" onclick="HelpChatFunc()"><i class="fa-solid fa-question"></i></button>
+                        <button id="minichat" class="btnMiniChat" onclick="MiniChatFunc()"><i class="fa-solid fa-minus"></i></button>
+                        <button id="closechat" class="btnCloseChat" onclick="CloseChatFunc()"><i class="fa-solid fa-x"></i></button>
+                    </div>
+
+                    <div id="chatWindowContent" class="txtArea">
+                        <!-- Messages are displayed here -->
+                    </div>
+                        <div class="CWFooter">
+                            <input type="text" name="userTextbox" id="userinput" class="CWInput" autocomplete="off" placeholder="Type and press Enter" required>
+                            <button type="submit" class="btnSendMessage" onclick="sendMessageFunc()">Send</button>
+                        </div>
+                 </div>
+            </div>
+
+
+
+
         </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Chatbot Functionality -->
+        <script src="js/chatbot.js"></script>
     </body>
 </html>
