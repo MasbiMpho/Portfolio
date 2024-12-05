@@ -30,9 +30,9 @@ function displayMessageFunc(message, sender){
 
     content.classList.add('txtMessages', sender);
 
-    // if (message.includes('education')) {
+    // if (message.includes('email')) {
     //     // If message has a URL, turn it into a clickable link
-    //     const linkStart = message.indexOf('#education');
+    //     const linkStart = message.indexOf('mailto:Mpho.Masibigiri@capaciti.org.za.com');
     //     const linkText = message.substring(linkStart);
     //     const linkEnd = linkText.indexOf(' ') !== -1 ? linkText.indexOf(' ') : linkText.length;
     //     const url = linkText.substring(0, linkEnd);
@@ -64,14 +64,29 @@ function botResponseFunc(userinput){
     const lowercase = userinput.toLowerCase();
 
     const helpkey = [
-        "About Mpho / Mpho",
-        "Skills",
-        "Education",
-        "Experience",
-        "Accomplishments",
-        "About You",
-        "Help",
-        "Interest"
+        "hello",
+        "how are you",
+        "your name",
+        "bye",
+        "help",
+        "thanks",
+        "skills",
+        "what can you do",
+        "about mpho",
+        "profile",
+        "about you",
+        "tell me about yourself",
+        "education",
+        "where did you study",
+        "interests",
+        "what does mpho like",
+        "awards",
+        "accomplishments",
+        "do you have experience",
+        "call",
+        "email",
+        "contact",
+        "linkedin",
       ];
 
       const bullethelp = helpkey.map(item => `• ${item}`).join("\n");
@@ -92,7 +107,8 @@ function botResponseFunc(userinput){
             return "ChatBot. De-O ChatBot.";
         break;
         case lowercase.includes('bye'):
-            return "Good bye";
+            return "Good bye. If you are done kindly select the X at the top right corner to close me.";
+            
         break;
         case lowercase.includes('help'):
             return "Of course! \nHere is a list of keywords you can include to help you get started.\n" + bullethelp;
@@ -104,7 +120,7 @@ function botResponseFunc(userinput){
             navigateToSection('skills');
             return "Mpho possess a strong set of soft skills, including being achievement-oriented, adaptable, and agile. He thrives in collaborative environments and he is an effective problem-solver, with a focus on time management to consistently meet deadlines and deliver results. Technical expertise spans several programming languages, including C#, C++, HTML/CSS, Java, JavaScript, and Visual Basic. He is also proficient with a variety of tools and technologies, such as Android Studio, Code Blocks, Discord, Eclipse, Git, Lucidchart, MS Office, SQL Server Management Studio, and Visual Studio Code.";
         break;
-        case lowercase.includes('about mpho'):
+        case lowercase.includes('about mpho') || lowercase.includes('profile'):
             navigateToSection('about');
             return "Mpho Masibigiri is a Computer Science graduate with a strong passion for developing user-centric applications. He has a solid foundation in programming languages such as Java, HTML/CSS, and C#/C++, and is committed to staying up-to-date with modern technologies to continually improve the user experience. He is analytical, achievement-oriented, and detail-focused, with a proven ability to manage time effectively, meet deadlines, and deliver high-quality results. He also thrives in collaborative team environments, especially in support roles where he can contribute to problem-solving, offer technical assistance, and work alongside others to create innovative solutions.";
         break;
@@ -126,6 +142,18 @@ function botResponseFunc(userinput){
         break;
         case lowercase.includes('experience') || lowercase.includes('do you have experience'):
             return "Although Mpho Masibigiri does not yet have formal work experience, he is currently gaining valuable hands-on experience through an internship at CapaCiti. During this time, he has had the opportunity to work on exciting projects, such as creating an online portfolio with a chatbot :), further developing his skills and expertise.";
+        break;
+        case lowercase.includes('contact') || lowercase.includes('how do i contact') || lowercase.includes('a hold of'):
+            return "You can contact Mpho via Email, SMS or Call. Type email or call in the message box to get Mpho's contact details.\n*Secret: He prefers calls";
+        break;
+        case lowercase.includes('email'):
+            return "mpho.masibigiri@capaciti.org.za";
+        break;
+        case lowercase.includes('call'):
+            return "071 323 6894";
+        break;
+        case lowercase.includes('linkedin'):
+            return "https://www.linkedin.com/in/mpho-lin-masibigiri";
         break;
         default:
             return "I’m not sure I understand. Can you explain your request a bit more?";
