@@ -7,6 +7,7 @@ This is a Portfolio webpage on me. It details my Achievements, Contacts, Educati
   <li>Includes a Left-sided Navigation bar</li>
   <li>Includes sections on Education, SKills, Achievement and About Me</li>
   <li>Include links to my Github and Linkedin</li>
+  <li>Includes a Chatbot</li>
 </ul>
 
 <h2>Tools Used</h2>
@@ -19,7 +20,7 @@ This is a Portfolio webpage on me. It details my Achievements, Contacts, Educati
   <li>Visual Studio Code</li>
 </ul>
 
-<h2>Installation and Setup</h2>
+<h2>Tools Needed to Execute</h2>
 <ul>
   <li>Download and Install any browser that supports HTML 5: Chrome, Edge, etc</li>
   <li>Download and Install any code editor: Visual Studio Code, Notepad++, etc</li>
@@ -33,6 +34,33 @@ This is a Portfolio webpage on me. It details my Achievements, Contacts, Educati
   <li>Open index file</li>
 </ul>
 
+<h2>Chatbot Keywords</h2>
+<ul>
+  <li>hello</li>
+  <li>how are you</li>
+  <li>your name</li>
+  <li>bye</li>
+  <li>help</li>
+  <li>thanks</li>
+  <li>skills</li>
+  <li>what can you do</li>
+  <li>about mpho</li>
+  <li>profile</li>
+  <li>about you</li>
+  <li>tell me about yourself</li>
+  <li>education</li>
+  <li>where did you study</li>
+  <li>interests</li>
+  <li>what does mpho like</li>
+  <li>awards</li>
+  <li>accomplishments</li>
+  <li>do you have experience</li>
+  <li>call</li>
+  <li>email</li>
+  <li>contact</li>
+  <li>linkedin</li>
+</ul>
+
 
 <h2>Credits/References</h2>
 <ul>
@@ -40,6 +68,7 @@ This is a Portfolio webpage on me. It details my Achievements, Contacts, Educati
   <li>Bootstrap modified by: Mpho Masibigiri</li>
   <li>Deployment platform: Github</li>
   <li>Deployed by: Mpho Masibigiri</li>
+  <li>#Robot icons created by Freepik - Flaticon: https://www.flaticon.com/free-icons/robot</li>
 </ul>
 
 
