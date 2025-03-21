@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@200;300;400;500;600&display=swap');
 
+
 :root
 {
     --bg-black-900:#f2f2f2;
@@ -50,6 +51,11 @@ ul
 
 }
 
+.hidden
+{
+    display: none !important;
+}
+
 .main-items
 {
     padding-left: 270px;
@@ -68,6 +74,52 @@ ul
     margin: auto;
     padding: 0 15px;
 }
+
+.section .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.section-title h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    position: relative;
+}
+
+.section-title h2::before
+{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after
+{
+    content: '';
+    width: 25px;
+    height: 4px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
 
 .row
 {
@@ -337,4 +389,54 @@ h3.my-profession
     top: -40px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
+}
+
+
+/* About */
+.about .about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h2
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin-bottom: 15px;
+}
+
+.about .about-content .about-text h3 span
+{
+    color: var(--skin-color); 
+}
+
+.about .about-content .about-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+.about .about-content .personal-info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    background-color: red;
+    margin-top: 40px;
+}
+
+.about .about-content .skills
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    background-color: green;
+    margin-top: 40px;
 }
