@@ -31,3 +31,12 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+
+// Typing Animation
+var typed = new Typed(".typing", {
+    strings:["DevOps Intern" , "Web Developer", "Software Developer", "Cyber Security Analyst"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
