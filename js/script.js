@@ -88,6 +88,10 @@ const nav = document.querySelector(".nav"),
         {
             aside.classList.toggle("open");
             navTogBtn.classList.toggle("open");
+            for(let i=0; i<totalSection; i++)
+            {
+                allSection[i].classList.toggle("open");
+            }
            
         }
 
