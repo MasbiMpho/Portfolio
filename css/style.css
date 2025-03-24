@@ -3,19 +3,11 @@
 
 :root
 {
-    /* --bg-black-900:#f2f2f2;
-    --bg-black-100:#f2f2f2;
-    --bg-black-50:#cb0505;
-
-    --text-black-900:#000000;
-    --text-black-700:#000000; */
-
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-
 }
 
 body.dark
@@ -349,6 +341,11 @@ ul
    
 }
 
+.aside .nav li i
+{
+    color: gold;
+}
+
 .aside .nav li a
 {
     color: var(--text-black-900);
@@ -362,6 +359,11 @@ ul
 }
 
 .aside .nav li a.active
+{
+    color: var(--skin-color);
+}
+
+.aside .nav li a:hover
 {
     color: var(--skin-color);
 }
@@ -486,6 +488,13 @@ h3.my-profession
 .about .about-content .about-text h3 span
 {
     color: var(--skin-color); 
+}
+
+.about .about-content .about-text h3
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
 }
 
 .about .about-content .about-text p
