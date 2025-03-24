@@ -70,6 +70,7 @@ ul
     padding: 0 30px;
     overflow-x: hidden;
     overflow-y: auto;
+    transition: all 0.3 ease;
 }
 
 .section.back-section
@@ -216,6 +217,7 @@ ul
     padding: 10;
 
     border-right: 1px solid var(--bg-black-50);
+    transition: all 0.3 ease;
     
 }
 
@@ -283,6 +285,7 @@ ul
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3 ease;
 }
 
 .aside .nav-tog span
@@ -293,6 +296,12 @@ ul
     display: inline-block;
     position: relative;
 }
+
+.aside .nav-tog span
+{
+    background-color: transparent;
+}
+
 
 .aside .nav-tog span::before
 {
@@ -305,6 +314,12 @@ ul
     left: 0;
 }
 
+.aside .nav-tog.open span::before
+{
+    top: 0;
+    transform: rotate(45deg);
+}
+
 .aside .nav-tog span::after
 {
     content: '';
@@ -314,6 +329,12 @@ ul
     background: var(--skin-color);
     top: 6px;
     left: 0;
+}
+
+.aside .nav-tog.open span::after
+{
+    top: 0;
+    transform: rotate(-45deg);
 }
 
 .aside .nav
@@ -512,7 +533,7 @@ h3.my-profession
 
 .about .about-content .personal-info .buttons .btn
 {
-    margin-right: 15px;
+    /*margin-right: 15px;*/
     margin-top: 10px;
 }
 
@@ -892,6 +913,11 @@ h3.my-profession
 
 @media (max-width:1199px)
 {
+    .section .container
+    {
+        padding-top: 70px;
+    }
+
     .aside
     {
         left: -270px;
