@@ -44,7 +44,6 @@ const nav = document.querySelector(".nav"),
                 if(navList[j].querySelector("a").classList.contains("active"))
                 {
                     addBackSection(j);
-                    //allSection[j].classList.add("back-section");
                 }
                 navList[j].querySelector("a").classList.remove("active");
             }
@@ -98,9 +97,4 @@ const nav = document.querySelector(".nav"),
     {
         allSection[num].classList.add("back-section");
     }
-
-
-    //allSection = document.querySelectorAll(".section"),
-    //totalSection = allSection.length;
-
 
