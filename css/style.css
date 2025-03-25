@@ -765,6 +765,22 @@ h3.my-profession
     padding-bottom: 40px;
 }
 
+.skill .languages .skill-title
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+    
+}
+
+.skill .languages h3
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin-bottom: 30px;
+}
+
 .skill .skill-item
 {
     margin-bottom: 30px;
@@ -798,7 +814,7 @@ h3.my-profession
     transition: all 0.3s ease;
 }
 
-.skill .skill-item .skill-item-inner .icon .fa
+.skill .skill-item .skill-item-inner .icon i.fab
 {
     font-size: 40px;
     line-height: 60px;
@@ -811,7 +827,7 @@ h3.my-profession
     background: var(--skin-color);
 }
 
-.skill .skill-item .skill-item-inner:hover .icon .fa
+.skill .skill-item .skill-item-inner:hover .icon i.fab
 {
     font-size: 25px;
     color: white;
