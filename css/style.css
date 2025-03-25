@@ -186,6 +186,46 @@ ul
     transform: scale(1.05);
 }
 
+.btnSocial
+{
+       
+    
+    background-color: var(--skin-color);
+    color: white;
+    border-radius: 100%;
+    display: inline-flex;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    border: none;
+
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
+}
+
+.experiment
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: var(--skin-color);
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.btnSocial:hover {
+  
+    background-color: gold;
+    
+  }
+
 .shadow-dark
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
@@ -490,6 +530,11 @@ h3.my-profession
     color: var(--skin-color); 
 }
 
+.about .about-content .about-text span
+{
+    color: var(--skin-color); 
+}
+
 .about .about-content .about-text h3
 {
     font-size: 16px;
@@ -603,8 +648,14 @@ h3.my-profession
     line-height: 40px;
 }
 
-.about .about-content .education,
-.about .about-content .experience
+/* Qualification */
+.qualification .container
+{
+    padding-bottom: 40px;
+}
+
+.qualification .qualification-content .education,
+.qualification .qualification-content .experience
 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -612,21 +663,21 @@ h3.my-profession
     
 }
 
-.about .about-content h3.title
+.qualification .qualification-content h3.title
 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
     color: var(--text-black-900);
     margin-bottom: 30px;
 }
 
-.about .about-content .timeline-box
+.qualification .qualification-content .timeline-box
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .timeline
+.qualification .qualification-content .timeline
 {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
@@ -636,19 +687,19 @@ h3.my-profession
     position: relative;
 }
 
-.about .about-content .timeline .timeline-item
+.qualification .qualification-content .timeline .timeline-item
 {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
 
-.about .about-content .timeline .timeline-item:last-child
+.qualification .qualification-content .timeline .timeline-item:last-child
 {
     padding-bottom: 0;
 }
 
-.about .about-content .timeline .timeline-item::before
+.qualification .qualification-content .timeline .timeline-item::before
 {
     content: '';
     position: absolute;
@@ -659,7 +710,7 @@ h3.my-profession
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .circle-dot
+.qualification .qualification-content .timeline .circle-dot
 {
     position: absolute;
     left: 0;
@@ -670,7 +721,7 @@ h3.my-profession
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .timeline-date
+.qualification .qualification-content .timeline .timeline-date
 {
     font-weight: 400;
     font-size: 14px;
@@ -678,21 +729,21 @@ h3.my-profession
     color: var(--text-black-700);
 }
 
-.about .about-content .timeline .timeline-date .fa
+.qualification .qualification-content .timeline .timeline-date .fa
 {
     margin-right: 5px;
 }
 
-.about .about-content .timeline .timeline-title
+.qualification .qualification-content .timeline .timeline-title
 {
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-transform: capitalize;
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline .timeline-text
+.qualification .qualification-content .timeline .timeline-text
 {
     line-height: 25px;
     font-size: 16px;
