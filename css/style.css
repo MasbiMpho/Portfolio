@@ -700,20 +700,20 @@ h3.my-profession
     color: var(--text-black-700);
 }
 
-/* Service */
-.service .container
+/* Skill */
+.skill .container
 {
     padding-bottom: 40px;
 }
 
-.service .service-item
+.skill .skill-item
 {
     margin-bottom: 30px;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
 
-.service .service-item .service-item-inner
+.skill .skill-item .skill-item-inner
 {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -723,12 +723,12 @@ h3.my-profession
     transition: all 0.35s ease;
 }
 
-.service .service-item .service-item-inner:hover
+.skill .skill-item .skill-item-inner:hover
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.service .service-item .service-item-inner .icon
+.skill .skill-item .skill-item-inner .icon
 {
     height: 60px;
     width: 60px;
@@ -739,7 +739,7 @@ h3.my-profession
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa
+.skill .skill-item .skill-item-inner .icon .fa
 {
     font-size: 40px;
     line-height: 60px;
@@ -747,18 +747,18 @@ h3.my-profession
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner:hover .icon
+.skill .skill-item .skill-item-inner:hover .icon
 {
     background: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa
+.skill .skill-item .skill-item-inner:hover .icon .fa
 {
     font-size: 25px;
     color: white;
 }
 
-.service .service-item .service-item-inner h4
+.skill .skill-item .skill-item-inner h4
 {
     font-size: 18px;
     font-weight: 700;
@@ -767,40 +767,40 @@ h3.my-profession
     text-transform: capitalize;
 }
 
-.service .service-item .service-item-inner p
+.skill .skill-item .skill-item-inner p
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
 
-/* Portfolio */
-.portfolio .container
+/* Project */
+.project .container
 {
     padding-bottom: 40px;
 }
 
-.portfolio .portfolio-heading
+.project .project-heading
 {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.portfolio .portfolio-heading h2
+.project .project-heading h2
 {
     font-weight: 500;
     color: var(--text-black-900);
 }
 
-.portfolio .portfolio-item
+.project .project-item
 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner
+.project .project-item-inner
 {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
@@ -808,7 +808,7 @@ h3.my-profession
     cursor: pointer;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img
+.project .project-item-inner .project-img img
 {
     width: 100%;
     display: block;
@@ -979,8 +979,8 @@ h3.my-profession
         display: none;
     }
 
-    .service .service-item,
-    .portfolio .portfolio-item,
+    .skill .skill-item,
+    .project .project-item,
     .contact .contact-info-item
     {
         flex: 0 0 50%;
@@ -995,8 +995,8 @@ h3.my-profession
     .about .about-content .skills,
     .about .about-content .education,
     .about .about-content .experience,
-    .service .service-item,
-    .portfolio .portfolio-item,
+    .skill .skill-item,
+    .project .project-item,
     .contact .contact-info-item,
     .contact .contact-form .col-6
     {
