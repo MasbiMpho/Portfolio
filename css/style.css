@@ -896,7 +896,7 @@ h3.my-profession
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .contact-sub-title
@@ -921,6 +921,12 @@ h3.my-profession
 }
 
 .contact .contact-info-item .icon .fa
+{
+    font-size: 25px;
+    color: var(--skin-color);    
+}
+
+.contact .contact-info-item .icon .fab
 {
     font-size: 25px;
     color: var(--skin-color);    
@@ -993,6 +999,7 @@ h3.my-profession
 {
     height: 50px;
     padding: 0 50px;
+    margin-left: 40%;
 }
 
 @media (max-width:1199px)
