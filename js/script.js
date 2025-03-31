@@ -1,4 +1,4 @@
-// Dark Mode
+// Dark Mode Functionality
 const dayNight = document.querySelector(".day-night");
 
 dayNight.addEventListener("click", () => {
@@ -18,7 +18,8 @@ window.addEventListener("load", () => {
     }
 })
 
-// Typing Animation
+
+// Typing Animation Functionality
 var typed = new Typed(".typing", {
     strings:["DevOps Intern" , "Web Developer", "Software Developer"],
     typeSpeed: 100,
@@ -26,7 +27,8 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-// Navigation bar
+
+// Navigation bar Functionality
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length,
@@ -98,11 +100,11 @@ const nav = document.querySelector(".nav"),
         allSection[num].classList.add("back-section");
     }
 
-    // Filter Functionality
+    // Project Filter Functionality
     const filterContainer = document.querySelector(".project-filter"), filterBtn = filterContainer.children,
     totalFilterBtn = filterBtn.length, 
     projectItems = document.querySelectorAll(".project-item"), totalProjectItem = projectItems.length;
-    
+
     for(let i=0; i<totalFilterBtn; i++)
     {
         filterBtn[i].addEventListener("click", function()
