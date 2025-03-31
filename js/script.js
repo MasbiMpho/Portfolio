@@ -102,6 +102,7 @@ const nav = document.querySelector(".nav"),
     const filterContainer = document.querySelector(".project-filter"), filterBtn = filterContainer.children,
     totalFilterBtn = filterBtn.length, 
     projectItems = document.querySelectorAll(".project-item"), totalProjectItem = projectItems.length;
+    
     for(let i=0; i<totalFilterBtn; i++)
     {
         filterBtn[i].addEventListener("click", function()
@@ -114,13 +115,20 @@ const nav = document.querySelector(".nav"),
             {
                 if(filterValue === projectItems[j].getAttribute("data-category"))
                 {
+                    projectItems[j].classList.remove("hide");
                     projectItems[j].classList.add("show");
                 }
                 else
                 {
+                    projectItems[j].classList.add("hide");
                     projectItems[j].classList.remove("show");
                 }
                
+                if(filterValue === "all")
+                {
+                    projectItems[j].classList.remove("hide");
+                    projectItems[j].classList.add("show");
+                }
             }
         })
     }
