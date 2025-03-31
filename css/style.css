@@ -952,6 +952,31 @@ h3.my-profession
     overflow: hidden;
 }
 
+.project-item.hide
+{
+    display: none;
+}
+
+.project-item.show
+{
+    display: block;
+    animation: showItem 0.5s ease;
+}
+
+@keyframes showItem
+{
+    0%
+    {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .project-item .mask
 {
     background: var(--text-black-900);
@@ -961,6 +986,12 @@ h3.my-profession
     height: 100%;
     width: 100%;
     transition: 0.3s;
+    opacity: 0;
+}
+
+.project-item-inner:hover .mask
+{
+    opacity: 0.9;
 }
 
 .project-item .term
@@ -976,6 +1007,7 @@ h3.my-profession
     display: inline-block;
     padding: 0.19rem 0.625rem;
     transition: 0.3s;
+    transform: translateY(-40px);
 }
 
 .project-item h3
@@ -986,6 +1018,9 @@ h3.my-profession
     padding: 0 1.25rem;
     position: absolute;
     top: 3.75rem;
+    transition: 0.3s;
+    transform: translateY(30px);
+    opacity: 0;
 }
 
 .project-item .more-button
@@ -1002,8 +1037,16 @@ h3.my-profession
     cursor: pointer;
     border-radius: 50%;
     text-align: center;
-    line-height: 25px;
+    line-height: 28px;
+    transition: 0.3s;
+    opacity: 0;
 
+}
+
+.project-item-inner:hover h3, .project-item-inner:hover span
+{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
