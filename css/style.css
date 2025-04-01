@@ -934,6 +934,11 @@ h3.my-profession
     color: var(--text-black-900);
 }
 
+.project .project-filter button:hover
+{
+    color: var(--skin-color);
+}
+
 .project .project-filter button.active
 {
     color: var(--skin-color);
@@ -944,12 +949,13 @@ h3.my-profession
 {
     content: '';
     position: absolute;
-    bottom: -0.75rem;
+    bottom: -0.55rem;
+    transform: translateX(-50%);
     left: 45%;
-    width: 0.3rem;
+    width: 1.3rem;
     height: 0.3rem;
     background-color: var(--skin-color);
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 /* New project item */
@@ -1028,7 +1034,9 @@ h3.my-profession
     margin: 0 0 0.98rem;
     padding: 0 1.25rem;
     position: absolute;
-    top: 3.75rem;
+    top: 40%;
+    left: 15%;
+    transform: translateX(-50%);
     transition: 0.3s;
     transform: translateY(30px);
     opacity: 0;
