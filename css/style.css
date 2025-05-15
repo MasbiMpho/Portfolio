@@ -10,6 +10,9 @@
     --text-black-700: #504e70;
 
     --text-c-100: green;
+
+     --text-shadow-900: rgb(255, 255, 255);
+    
 }
 
 body.dark
@@ -21,6 +24,8 @@ body.dark
     --text-black-700: #e9e9e9;
 
     --text-c-100: greenyellow;
+   
+    --text-shadow-900: rgb(48, 46, 77);
 }
 
 body
@@ -601,6 +606,12 @@ h3.my-profession
 {
     /*margin-right: 15px;*/
     margin-top: 10px;
+    color: var(--bg-black-900);
+}
+
+.about .about-content .personal-info .buttons .btn:hover
+{
+    color: var(--text-black-900);
 }
 
 .about .about-content .skills
@@ -1117,7 +1128,7 @@ h3.my-profession
 /* Contact */
 .contact-title
 {
-    color: var(--skin-color);
+    color: var(--text-black-900);
     text-align: center;
     font-size: 25px;
     margin-bottom: 50px;
@@ -1142,18 +1153,19 @@ h3.my-profession
 .contact .contact-info-item .icon
 {
     display: inline-block;
+    
 }
 
 .contact .contact-info-item .icon .fa
 {
     font-size: 25px;
-    color: var(--skin-color);    
+    color: gold;    
 }
 
 .contact .contact-info-item .icon .fab
 {
     font-size: 25px;
-    color: var(--skin-color);    
+    color: gold;    
 }
 
 .contact .contact-info-item h4
@@ -1168,9 +1180,19 @@ h3.my-profession
 .contact .contact-info-item p
 {
     font-size: 16px;
-    color: var(--text-black-700);
+    color: var(--skin-color);
     line-height: 25px;
     font-weight: 400;
+}
+.contact .contact-info-item p a
+{
+    color: var(--skin-color);
+    text-decoration: underline;
+}
+
+.contact .contact-info-item p a:hover
+{
+    color: gold;
 }
 
 .contact .contact-form
@@ -1211,8 +1233,10 @@ h3.my-profession
 
 .contact .contact-form .form-item .form-control:focus
 {
-   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border-color: var(--skin-color);
+    box-shadow: 0 0 20px rgba(6, 184, 255, 0.7);
 }
+
 
 .contact .contact-form .form-item textarea.form-control
 {
@@ -1221,9 +1245,16 @@ h3.my-profession
 
 .contact .contact-form .btn
 {
+    color: var(--bg-black-900);
     height: 50px;
     padding: 0 50px;
     margin-left: 40%;
+}
+
+.contact .contact-form .btn:hover
+{
+    color: var(--text-black-900);
+    cursor: pointer;
 }
 
 @media (max-width:1199px)
