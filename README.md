@@ -30,7 +30,7 @@ This is a Portfolio webpage on me. It details my Achievements, Contacts, Educati
 <h2>How to Run the Project</h2>
 <ul>
   <li>Open Git bash</li>
-  <li>Clone the repository using the following command: git clone https://github.com/Mpho-CapaCiTi/Mpho-CapaCiTi.github.io.git</li>
+  <li>Clone the repository using the following command: git clone https://github.com/MasbiMpho/Portfolio.git</li>
   <li>Open index file</li>
 </ul>
 
