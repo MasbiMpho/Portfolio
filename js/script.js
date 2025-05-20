@@ -18,14 +18,17 @@ window.addEventListener("load", () => {
     }
 })
 
-
 // Typing Animation Functionality
+document.addEventListener("DOMContentLoaded", function() {
 var typed = new Typed(".typing", {
-    strings:["DevOps Intern" , "Web Developer", "Software Developer"],
-    typeSpeed: 100,
-    backSpeed: 60,
+    strings:["DevOps Intern", "Software Developer Graduate"],
+    typeSpeed: 150,
+    backSpeed: 80,
     loop: true
 });
+
+});
+
 
 
 // Navigation bar Functionality

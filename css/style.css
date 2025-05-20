@@ -274,16 +274,15 @@ ul
 {
     color: var(--text-black-900);
     font-weight: 700;
-    padding: 15px 20px;
+    padding: 15px 15px;
     font-size: 30px;
     letter-spacing: 5px;
 }
 
 .aside .logo a span
 {
-   font-family: 'Clicker Script', cursive;
+   font-family: 'algerian', sans-serif;
    font-size: 40px;
-   
 }
 
 .aside .logo a::before
@@ -294,10 +293,12 @@ ul
     height: 20px;
     border-bottom: 5px solid var(--skin-color);
     border-left: 5px solid var(--skin-color);
-    bottom: 0;
+    bottom: 20px;
     left: 0;
+    transform: rotate(45deg);
     
 }
+
 
 .aside .logo a::after
 {
@@ -307,8 +308,9 @@ ul
     height: 20px;
     border-top: 5px solid var(--skin-color);
     border-right: 5px solid var(--skin-color);
-    top: 0;
+    bottom: 20px;
     right: 0;
+    transform: rotate(45deg);
     
 }
 
@@ -1008,7 +1010,7 @@ h3.my-profession
     }
 }
 
-.project-item .mask
+/* .project-item .mask
 {
     background: grey;
     position: absolute;
@@ -1025,7 +1027,7 @@ h3.my-profession
 .project-item-inner:hover .mask
 {
     opacity: 0.9;
-}
+} */
 
 .project-item .term
 {
@@ -1045,19 +1047,29 @@ h3.my-profession
     transform: translateY(-40px);
 }
 
+
+.project-item{
+    position: relative;
+    text-align: center;
+}
+
 .project-item h3
 {
     color: white;
-    font-size: 1.25rem;
-    margin: 0 0 0.98rem;
-    padding: 0 1.25rem;
+    font-size: 18px;
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top: 50%;
+    
     transform: translateX(-50%);
     transition: 0.3s;
     transform: translateY(30px);
     opacity: 0;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-align: center;
+
+    max-width: 100px;
+    background-color: red;
 }
 
 .project-item .more-button

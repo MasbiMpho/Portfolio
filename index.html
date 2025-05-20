@@ -15,6 +15,9 @@
 
     <!-- Font Awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Typing speed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body class="dark">
     
@@ -24,7 +27,7 @@
         <!-- Aside -->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>M</span>pho</a>
+                <a href="#"><span>P</span>ortfolio</a>
             </div>
             <div class="nav-tog">
                 <span></span>
@@ -46,16 +49,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">My name is <span class="name">Mpho Masibigiri</span></h3>
-                            <h3 class="my-profession">Im a <span class="typing">DevOps Intern</span>
+                            <h3 class="hello">Hello World, the name's <span class="name">Mpho Masibigiri </span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing"></span>
                             </h3>
-                            <p></p>
                             
                             <a class="btnSocial" href="https://www.linkedin.com/in/mpho-lin-masibigiri" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="btnSocial" href="https://www.github.com/MasbiMpho" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                         <div class="home-img padd-15">
-                            <img src="assets/img/robot.png" alt="">
+                            <img src="assets/img/ProfilePic.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -304,38 +306,77 @@
                             <h2>Project</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="project-heading padd-15">
-                            <h2>Project Showcases :</h2>
-                        </div>
-                    </div>
+                    
                     <div class="row">
                         <div class="project-heading padd-15">
                             <div class="project-filter">
-                                <button type="button" class="active" data-filter="all">Everything</button>
-                                <button type="button" data-filter="art">Art</button>
-                                <button type="button" data-filter="creative">Creative</button>
-                                <button type="button" data-filter="design">Design</button>
+                                <button type="button" class="active" data-filter="all">All</button>
+                                <button type="button" data-filter="java">Java</button>
+                                <button type="button" data-filter="html">HTML/CSS</button>
+                                <button type="button" data-filter="javascript">JavaScript</button>
+                                <button type="button" data-filter="react">React</button>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <!-- New Project Item -->
-                         <div class="project-item padd-15" data-category="art">
+                         <div class="project-item padd-15" data-category="html">
                             <div class="project-item-inner">
                                 <div class="project-img shadow-dark">
+                                    <img src="assets/img/portfolio.png" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <span class="term">Web Portfolio</span>
+                                <!-- <h3 class="project-item-title">Web Portfolio</h3> -->
+                                <span class="more-button">
+                                    <a href="">Live Demo</a>
+                                </span>
+                            </div>
+                         </div>
+                        <!-- Project Item -->
+                         <div class="project-item padd-15" data-category="html">
+                            <div class="project-item-inner shadow-dark">
+                                <div class="project-img">
                                     <img src="assets/img/robot.png" alt="">
                                     <div class="mask"></div>
                                 </div>
-                                <span class="term">Art</span>
-                                <h3 class="project-item-title">Web Page Portfolio</h3>
+                                <span class="term">ChatBot</span>
+                                <!-- <h3 class="project-item-title">ChatBot</h3> -->
                                 <span class="more-button">
                                     <a href="#">Live Demo</a>
                                 </span>
                             </div>
                          </div>
-                        <!-- Project Item -->
-                         <div class="project-item padd-15" data-category="creative">
+                         <!-- Project Item -->
+                         <div class="project-item padd-15" data-category="javascript">
+                            <div class="project-item-inner shadow-dark">
+                                <div class="project-img">
+                                    <img src="assets/img/todolist.png" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <span class="term">To Do List</span>
+                                <!-- <h3 class="project-item-title">To Do List</h3> -->
+                                <span class="more-button">
+                                    <a href="https://pro2dolist.onrender.com/" target="_blank">Live Demo</a>
+                                </span>
+                            </div>
+                         </div>
+                         <!-- Project Item -->
+                         <div class="project-item padd-15" data-category="react">
+                            <div class="project-item-inner shadow-dark">
+                                <div class="project-img">
+                                    <img src="assets/img/asmdb.png" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <span class="term">Movie Database</span>
+                                <!-- <h3 class="project-item-title"></h3> -->
+                                <span class="more-button">
+                                    <a href="https://autosynstudios.netlify.app/" target="_blank">Live Demo</a>
+                                </span>
+                            </div>
+                         </div>
+                         <!-- Project Item -->
+                         <!-- <div class="project-item padd-15" data-category="creative">
                             <div class="project-item-inner shadow-dark">
                                 <div class="project-img">
                                     <img src="assets/img/robot.png" alt="">
@@ -347,31 +388,7 @@
                                     <a href="#">Live Demo</a>
                                 </span>
                             </div>
-                         </div>
-                         <!-- Project Item -->
-                         <div class="project-item padd-15">
-                            <div class="project-item-inner shadow-dark">
-                                <div class="project-img">
-                                    <img src="assets/img/robot.png" alt="">
-                                </div>
-                            </div>
-                         </div>
-                         <!-- Project Item -->
-                         <div class="project-item padd-15">
-                            <div class="project-item-inner shadow-dark">
-                                <div class="project-img">
-                                    <img src="assets/img/robot.png" alt="">
-                                </div>
-                            </div>
-                         </div>
-                         <!-- Project Item -->
-                         <div class="project-item padd-15">
-                            <div class="project-item-inner shadow-dark">
-                                <div class="project-img">
-                                    <img src="assets/img/robot.png" alt="">
-                                </div>
-                            </div>
-                         </div>
+                         </div> -->
                     </div>
                 </div>
                </section>
