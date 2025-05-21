@@ -8,16 +8,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css">
-    
+
+     <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="css/chatbot.css"/>
 
     <!-- Style Switch -->
     <link rel="stylesheet" href="css/style-switcher.css">
 
     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Typing speed -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   
 </head>
 <body class="dark">
     
@@ -469,18 +470,56 @@
                     </div>
                 </section>
          </div>
+         
      </div>
 
-     <!-- Style Switch -->
-      <div class="style-switcher">
+    <!-- Style Switch -->
+    <div class="style-switcher">
         <div class="day-night s-icon">
             <i class="fas"></i>
         </div>
-      </div>
+    </div>
 
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ChatBot  -->     
+        <!-- Chatbot open button -->
+        <div class="btnOpenChat">
+            <div class="btnOpenChatIcon c-icon">
+                <i class="fas fa-comments" id="openchat" onclick="OpenChatFunc()"></i>                            
+            </div>
+        </div>
 
-     <script src="js/script.js"></script>
+        <!-- Chatbot window -->
+        <div id="chatWindow" class="ChatPopup">
+            <!-- Chatbot header -->
+            <div id="chatWindowHeader" class="CWHeader">
+                <span class="CWText"><img src="assets/img/robot.png" class="CWImg"> <p class="CWCBName">De-O</p></span>
+                <button id="helpchat" class="btnHelpChat" onclick="HelpChatFunc()"><i class="fa-solid fa-question"></i></button>
+                <button id="minichat" class="btnMiniChat" onclick="MiniChatFunc()"><i class="fa-solid fa-minus"></i></button>
+                <button id="closechat" class="btnCloseChat" onclick="CloseChatFunc()"><i class="fa-solid fa-x"></i></button>
+            </div>
+
+            <!-- Chatbot text area -->
+            <div id="chatWindowContent" class="txtArea">
+                <!-- Messages are displayed here -->
+            </div>
+
+            <!-- Chatbot footer -->
+            <div class="CWFooter">
+                <input type="text" name="userTextbox" id="userinput" class="CWInput" autocomplete="off" placeholder="Type and press Enter" required>
+                <button type="submit" class="btnSendMessage" onclick="sendMessageFunc()">Send</button>
+            </div>
+
+        </div>
+          
+      
+
+    <!-- Typing speed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Main Functionality-->
+    <script src="js/script.js"></script>
+
+     <!-- Chatbot Functionality -->
+    <script src="js/chatbot.js"></script>
 </body>
 </html>
