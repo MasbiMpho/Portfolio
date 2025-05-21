@@ -29,6 +29,11 @@
     border-radius: 50%;
 }
 
+.style-switcher .day-night:hover{
+    cursor: pointer;
+    background-color: var(--skin-color); 
+}
+
 .style-switcher .day-night
 {
     top: 0;
