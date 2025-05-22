@@ -861,12 +861,26 @@ h3.my-profession
     transition: all 0.3s ease;
 }
 
+.skill .skill-item .skill-item-inner .icon i.fas
+{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
 .skill .skill-item .skill-item-inner:hover .icon
 {
     background: var(--skin-color);
 }
 
 .skill .skill-item .skill-item-inner:hover .icon i.fab
+{
+    font-size: 25px;
+    color: white;
+}
+
+.skill .skill-item .skill-item-inner:hover .icon i.fas
 {
     font-size: 25px;
     color: white;
