@@ -103,6 +103,8 @@ const nav = document.querySelector(".nav"),
         allSection[num].classList.add("back-section");
     }
 
+
+
     // Project Filter Functionality
     const filterContainer = document.querySelector(".project-filter"), filterBtn = filterContainer.children,
     totalFilterBtn = filterBtn.length, 
@@ -137,3 +139,37 @@ const nav = document.querySelector(".nav"),
             }
         })
     }
+
+    const form = document.getElementById("contact-form");
+    const message = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+            try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                message.innerHTML = "<p style='color:green; text-align:center'>Thanks! Your message has been sent.</p>";
+                form.reset(); 
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    message.innerHTML = "<p style='color:red; text-align:center'>Error: " + data.errors.map(e => e.message).join(", ") + "</p>";
+                } else {
+                    message.innerHTML = "<p style='color:red; text-align:center'>Oops! Something went wrong.</p>";
+                }
+            }
+            } catch (error) {
+                message.innerHTML = "<p style='color:red; text-align:center'>Network error. Please try again later.</p>";
+            }
+        });
+   

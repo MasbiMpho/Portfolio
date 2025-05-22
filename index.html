@@ -363,20 +363,7 @@
                                 </span>
                             </div>
                          </div>
-                         <!-- Project Item -->
-                         <!-- <div class="project-item padd-15" data-category="html">
-                            <div class="project-item-inner shadow-dark">
-                                <div class="project-img">
-                                    <img src="assets/img/chatbot.png" alt="">
-                                    <div class="mask"></div>
-                                </div>
-                                <span class="term">ChatBot</span>
-                           
-                                <span class="more-button">
-                                    <a href="#">Live Demo</a>
-                                </span>
-                            </div>
-                        </div> -->
+
                     </div>
                 </div>
                </section>
@@ -390,7 +377,6 @@
                             </div>
                         </div>
                         <h3 class="contact-title padd-15">Have any Questions?</h3>
-                        <!-- <h4 class="contact-sub-title padd-15">something something</h4> -->
                         <div class="row">
                             <!-- Contact Info Item -->
                             <div class="contact-info-item padd-15">
@@ -426,40 +412,45 @@
                             </div>
                         </div>
                         <h3 class="contact-title padd-15">Send Me an Email</h3>
-                        <!-- <h4 class="contact-sub-title padd-15">something something</h4> -->
+                        
                         <!-- Contact Form -->
+                         <form id="contact-form" action="https://formspree.io/f/xdkgvzga" method="POST">
                          <div class="row">
+                            
                             <div class="contact-form padd-15">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name">
+                                            <input id="yourname" type="text" class="form-control" name="name" placeholder="Your Name">
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Email">
+                                            <input id="youremail" type="text" class="form-control" name="email" placeholder="Your Email">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
+                                            <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                            <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
+                                        
+                                        <div id="form-status" style="margin-bottom: 1em;"></div>
+
                                         <div class="form-group">
-                                           <button type="submit" class="btn">
+                                           <button id="sendmessage" type="submit" class="btn">
                                                 Send Message
                                            </button>
                                         </div>
@@ -467,6 +458,9 @@
                                 </div>
                             </div>
                          </div>
+                           
+                         
+                         </form>
                     </div>
                 </section>
          </div>
