@@ -622,7 +622,7 @@ h3.my-profession
 {
     color: var(--text-black-900);
 }
-/* 
+
 .about .about-content .skills
 {
     flex: 0 0 40%;
@@ -644,8 +644,8 @@ h3.my-profession
     font-weight: 600;
     color: var(--text-black-900);
     text-transform: capitalize;
-} */
-/* 
+}
+
 .about .about-content .skills .skill-item .progress
 {
     background-color: var(--bg-black-50);
@@ -678,7 +678,7 @@ h3.my-profession
     font-weight: 400;
     color: var(--text-black-900);
     line-height: 40px;
-} */
+}
 
 /* Qualification */
 .qualification .container
