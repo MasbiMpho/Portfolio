@@ -106,40 +106,36 @@ const nav = document.querySelector(".nav"),
 
 
     // Project Filter Functionality
-    const filterContainer = document.querySelector(".project-filter"), filterBtn = filterContainer.children,
-    totalFilterBtn = filterBtn.length, 
-    projectItems = document.querySelectorAll(".project-item"), totalProjectItem = projectItems.length;
+    const filterContainer = document.querySelector(".project-filter"),
+      filterBtn = filterContainer.children,
+      totalFilterBtn = filterBtn.length,
+      projectItems = document.querySelectorAll(".project-item"),
+      totalProjectItem = projectItems.length;
 
-    for(let i=0; i<totalFilterBtn; i++)
-    {
-        filterBtn[i].addEventListener("click", function()
-        {
+    for(let i = 0; i < totalFilterBtn; i++) {
+        filterBtn[i].addEventListener("click", function() {
             filterContainer.querySelector(".active").classList.remove("active");
             this.classList.add("active");
 
             const filterValue = this.getAttribute("data-filter");
-            for(let j=0; j<totalProjectItem; j++)
-            {
-                if(filterValue === projectItems[j].getAttribute("data-category"))
-                {
+
+            for(let j = 0; j < totalProjectItem; j++) {
+                
+                const itemCategories = projectItems[j].getAttribute("data-category").split(" ");
+
+                if (filterValue === "all" || itemCategories.includes(filterValue)) {
                     projectItems[j].classList.remove("hide");
                     projectItems[j].classList.add("show");
-                }
-                else
-                {
+                } else {
                     projectItems[j].classList.add("hide");
                     projectItems[j].classList.remove("show");
                 }
-               
-                if(filterValue === "all")
-                {
-                    projectItems[j].classList.remove("hide");
-                    projectItems[j].classList.add("show");
-                }
             }
-        })
+        });
     }
 
+
+    // Contact Form Functionality
     const form = document.getElementById("contact-form");
     const message = document.getElementById("form-status");
 

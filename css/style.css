@@ -978,6 +978,7 @@ h3.my-profession
     border-radius: 20px;
 }
 
+
 /* New project item */
 .project-item-inner
 {
@@ -1010,24 +1011,6 @@ h3.my-profession
     }
 }
 
-/* .project-item .mask
-{
-    background: grey;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s;
-    opacity: 0;
-}
-
-.project-item-inner:hover .mask
-{
-    opacity: 0.9;
-} */
 
 .project-item .term
 {
